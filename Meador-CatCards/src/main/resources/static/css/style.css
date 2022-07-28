@@ -1,0 +1,114 @@
+:root {
+    --card-width: 500px;
+
+}
+
+html {
+    background: #fff url(https://i.postimg.cc/1tvZY8NV/image-46.png) center center/contain repeat content-box local;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#cat_card {
+    background-color: azure;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 8px;
+    border: 4px solid black;
+    width: var(--card-width);
+    border-radius: 8px;
+}
+
+#cat_pic {
+
+    height: calc(var(--card-width) / 1.6);
+    width: var(--card-width);
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+
+#cat_fact {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: var(--card-width);
+}
+
+#name_box {
+    margin-left: 6px;
+    font-size: 25px;
+    font-family: Impact;
+    margin-top: 10px;
+    display: block;
+    width: var(--card-width);
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+#name_box::placeholder {
+    text-align: center;
+}
+
+#button_holder {
+    width: var(--card-width);
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-left: 10px;
+}
+
+h1{
+    margin-top: 40px;
+    font: 800 40px Arial;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px;
+    margin-bottom: -10px;
+}
+
+h2{
+    font: 800 30px Arial;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px;
+}
+
+#instructions{
+    font: 800 20px Arial;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#collection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.card {
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    box-shadow:
+            0 0 0 5px white,
+            0 0 0 80px black;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    background-color: white;
+    font: 800 14px Arial;
+}
+
+.card > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+
+
